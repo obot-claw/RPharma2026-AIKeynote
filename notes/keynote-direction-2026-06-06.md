@@ -1,10 +1,10 @@
 # Keynote direction notes — 2026-06-06
 
-Source: Jeremy dictation, 2026-06-06. The available machine transcript appears to cut off mid-thought after: “...we've transitioned from kind of code assist to now the kind of AI.” Treat the final agentic-AI section as draft scaffolding until Jeremy supplies or confirms the missing ending.
+Source: two Jeremy dictations from 2026-06-06. The first message cut off during the transition from code assist to current AI; the second message completed the three-part structure and clarified the emphasis for sections 2 and 3.
 
 ## Core thesis
 
-Agentic AI can streamline and automate clinical trial work when it is connected to open, auditable, reusable clinical software workflows.
+Agentic AI can streamline and automate clinical trial work when it is connected to open, auditable, reusable clinical software workflows and governed by qualified, validated, GxP-ready practices.
 
 The keynote should focus on clinical trial operations and faster study data analysis across the study lifecycle:
 
@@ -15,44 +15,64 @@ The keynote should focus on clinical trial operations and faster study data anal
 
 ## Venue framing
 
-R/Pharma is the right venue because the audience already understands open-source collaboration and pre-competitive clinical tooling. The talk should ask: what can the open-source community do now that LLMs and agentic workflows are mature enough to move beyond simple code assist?
+R/Pharma is the right venue because the audience already works in open-source and pre-competitive clinical tooling. The talk should frame agentic AI as a community opportunity: what can the open-source clinical trial ecosystem build together now that LLMs and agentic workflows are capable enough to move beyond simple code assist?
 
 ## Three-part structure
 
 Jeremy wants the talk organized around the major open-source projects and career arc he has led.
 
-### Part 1 — Historical context: open source enters the clinical trial pipeline
+### Part 1 — History: open source and clinical trials
 
-Frame this as a 20-year shift:
+Frame this as a roughly 20-year shift:
 
 1. Every company maintained its own large repository of SAS macros.
 2. Teams moved toward a hybrid model using SAS plus R, Python, and other open-source tools.
 3. Some organizations now work from open-source frameworks with company-specific customizations, including Pharmaverse-style approaches.
 
-Message: clinical trial teams have already been moving toward shareable, inspectable infrastructure. Agentic AI is arriving into that context, not replacing it from scratch.
-
-### Part 2 — SafetyGraphics and GSM as pre-competitive frameworks
-
-Introduce Jeremy's two major projects:
+Introduce Jeremy's two major projects as part of this history:
 
 - SafetyGraphics: focused on safety monitoring.
 - GSM: focused on RBQM and statistical monitoring.
 
-Emphasize the common pattern: open, shareable, pre-competitive frameworks that make clinical trial review workflows more transparent and reusable.
+Message: clinical trial teams have already been moving toward shareable, inspectable infrastructure. Agentic AI is arriving into that context, not replacing it from scratch.
 
-### Part 3 — Current and future agentic engineering
+### Part 2 — Current best practices: GSM, agentic engineering, and validated use
 
-The transcript cuts off during the transition into this section. Based on the available direction, keep this section as a draft placeholder around:
+This is likely the biggest section and will evolve before October.
 
-- the recent transition from code assist to more capable agentic AI
-- obot/autonomous workers as the forward-looking demo thread
-- open-source clinical operations workflows where agents can plan, implement, test, document, and prepare evidence while humans set direction and review outputs
+Core emphasis:
 
-Do not over-specify the missing ending until Jeremy confirms it.
+- What has changed over the last few years as LLMs became more mature, available, and capable.
+- What can now be built with agentic engineering workflows.
+- Current GSM work as the concrete anchor.
+- Qualified, validated, GxP-ready use cases.
+- Human ownership of AI-written code.
+- Control, understanding, documentation, and explainability.
+- Evidence that code works and is safe, because the outputs affect medical research and real people.
+
+The tone should be practical and careful: not “AI can write code, ship it,” but “AI can help build faster if humans own the requirements, evidence, validation, and accountability.”
+
+### Part 3 — What comes next: obot and autonomous AI workers
+
+This section should use obot as the forward-looking demo thread.
+
+Core emphasis:
+
+- Agentically combining Jeremy's two major project lines into gsm.safety.
+- Work that would traditionally require a significant human time investment may be achievable by Jeremy plus agents before the talk.
+- Show the way of working, not just the artifact.
+- Explain the shift from highly integrated human-in-the-loop coding to a more delegated framework.
+- Frame obot as an AI engineering team managed by a human.
+- Discuss what has been accomplished, how the team works, and how far the project gets by October.
 
 ## Draft slide implications
 
-- The title should foreground clinical trial operations and the open-source community, not only SafetyGraphics/GSM/obot.
-- The first section should not be only “SafetyGraphics foundation”; it should tell the broader history from company-specific SAS macro libraries to hybrid/open frameworks.
-- SafetyGraphics and GSM should be introduced together as evidence that open pre-competitive frameworks can work in clinical trial operations.
-- The agentic AI section should be presented as a draft future/current transition with explicit uncertainty because the transcript ended mid-thought.
+- The title should foreground clinical trial operations, open source, and agentic AI.
+- Section 1 should be a broader history of open source in clinical trials, not just a SafetyGraphics/GSM intro.
+- Section 2 should be the longest and most serious section: GxP-ready agentic engineering, validation, human ownership, and current GSM work.
+- Section 3 should show obot and gsm.safety as a live/case-study demonstration of the future workflow.
+- The deck should be built iteratively from Jeremy's dictation over the next several months. Content comes first; detailed formatting/polish can come later.
+
+## Working content contract
+
+Jeremy expects to dictate substantive content and have obot synthesize it into notes, outline updates, and slide drafts. Later, Jeremy may directly edit or polish specific slides, but the working goal is for obot to turn dictation into the content backbone of the deck.

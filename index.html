@@ -33,16 +33,16 @@
     <section class="slide agenda">
       <h2>Three parts</h2>
       <ol>
-        <li>How open source entered the clinical trial pipeline.</li>
-        <li>What SafetyGraphics and GSM taught us about shared monitoring frameworks.</li>
-        <li>How the workflow is shifting from code assist to agentic engineering.</li>
+        <li>History: open source and clinical trials.</li>
+        <li>Current best practices for GxP-ready agentic engineering.</li>
+        <li>What's next: obot, gsm.safety, and autonomous AI workers.</li>
       </ol>
     </section>
 
     <section class="slide section-title">
       <p class="time">~10 minutes</p>
-      <h2>1. A quick history</h2>
-      <p>From company-specific SAS macro libraries to open clinical frameworks.</p>
+      <h2>1. History</h2>
+      <p>Open source, clinical trials, and the path from SAS macro libraries to open clinical frameworks.</p>
     </section>
 
     <section class="slide">
@@ -79,9 +79,9 @@
     </section>
 
     <section class="slide section-title">
-      <p class="time">~12 minutes</p>
-      <h2>2. SafetyGraphics and GSM</h2>
-      <p>Two open-source projects, one recurring pattern: pre-competitive clinical monitoring frameworks.</p>
+      <p class="time">~15 minutes</p>
+      <h2>2. Current best practices</h2>
+      <p>GSM, agentic engineering, and qualified, validated, GxP-ready AI use cases.</p>
     </section>
 
     <section class="slide split">
@@ -138,18 +138,6 @@
       <p>AI can do more than autocomplete code.</p>
     </section>
 
-    <section class="slide section-title">
-      <p class="time">~15 minutes</p>
-      <h2>3. From code assist to agentic engineering</h2>
-      <p>Current and future workflows for clinical trial operations.</p>
-    </section>
-
-    <section class="slide warning">
-      <h2>Draft note</h2>
-      <p>The available dictation transcript cuts off mid-thought after Jeremy begins the transition from “code assist” to the current kind of AI.</p>
-      <p class="note">The next slides are a first-draft scaffold, not a claimed final ending.</p>
-    </section>
-
     <section class="slide">
       <h2>What changed in the last few years</h2>
       <ul>
@@ -162,7 +150,27 @@
     <section class="slide">
       <h2>Agentic engineering</h2>
       <p class="definition">Humans set direction; agents execute bounded work loops with auditable evidence.</p>
-      <div class="flow">Requirement → implementation → checks → demo → PR → review</div>
+      <div class="flow">Issue → requirement → implementation → tests → demo → PR → human review</div>
+    </section>
+
+    <section class="slide warning">
+      <h2>Qualified, validated, GxP-ready</h2>
+      <ul>
+        <li>The goal is not just faster code.</li>
+        <li>The goal is controlled, explainable clinical software work.</li>
+        <li>Use cases need evidence that a qualified reviewer can inspect.</li>
+        <li>The process must support validation, traceability, and accountability.</li>
+      </ul>
+    </section>
+
+    <section class="slide warning">
+      <h2>AI-written code still needs a human owner</h2>
+      <ul>
+        <li>A person owns the requirements.</li>
+        <li>A person owns the risk decision.</li>
+        <li>A person must be able to explain why the code works.</li>
+        <li>A person must be able to explain why it is safe enough for medical research.</li>
+      </ul>
     </section>
 
     <section class="slide">
@@ -197,16 +205,40 @@
       </ul>
     </section>
 
+    <section class="slide section-title">
+      <p class="time">~15 minutes</p>
+      <h2>3. What comes next</h2>
+      <p>obot, gsm.safety, and autonomous AI workers managed by a human.</p>
+    </section>
+
     <section class="slide">
       <h2>obot as the demo thread</h2>
       <ul>
         <li>A dedicated open-source development agent.</li>
-        <li>GitHub as the engineering surface.</li>
+        <li>GitHub issues as PM memory and requirements.</li>
+        <li>Pull requests as development evidence.</li>
         <li>Browser QA for rendered outputs.</li>
-        <li>Memory and skills for continuity.</li>
         <li>Telegram feedback loops for decisions and review.</li>
       </ul>
-      <p class="placeholder">Add: live demo sequence once final talk arc is confirmed.</p>
+    </section>
+
+    <section class="slide">
+      <h2>The live case study: gsm.safety</h2>
+      <ul>
+        <li>Agentically combine SafetyGraphics and GSM.</li>
+        <li>Use agents for requirements, tests, docs, demos, and implementation PRs.</li>
+        <li>Use Jeremy as the human manager and accountable reviewer.</li>
+        <li>Report honestly in October on how far the team got.</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>From human-in-the-loop to delegated AI team</h2>
+      <div class="grid two">
+        <div><strong>Before</strong><br/>Highly integrated human/code-assist loop</div>
+        <div><strong>Now</strong><br/>Human-managed agents with PM, development, testing, and evidence loops</div>
+      </div>
+      <p class="note">The point is the way of working as much as the final package.</p>
     </section>
 
     <section class="slide">
@@ -222,7 +254,7 @@
     <section class="slide closing">
       <h2>Open source is the path</h2>
       <p>Build open, auditable agentic systems where AI workers amplify expert clinical and statistical judgment.</p>
-      <p class="placeholder">Add final links, QR code, and Jeremy's confirmed closing thought.</p>
+      <p class="placeholder">Add final links, QR code, and concrete gsm.safety / obot demo artifacts as the project matures.</p>
     </section>
   </main>
 
