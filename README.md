@@ -18,3 +18,10 @@ Open `index.html` locally or publish with GitHub Pages to review the current dra
 ## Publishing
 
 The deck is a static HTML/CSS/JS site. GitHub Pages is published by `.github/workflows/publish-pages.yml` on pushes to `main`, and can also be run manually with `workflow_dispatch`.
+
+
+## Release cadence
+
+Each meaningful slide update gets an incremental GitHub release: `v0.1`, `v0.2`, `v0.3`, etc. The title slide should link to the current release and show the release date.
+
+Visual assets are staged under `assets/screenshots/` and `assets/images/`; the image transition plan lives in `docs/visual-asset-plan.md`.

@@ -81,3 +81,19 @@ button {
   .slide { display: flex !important; page-break-after: always; }
   .controls { display: none; }
 }
+
+.release-meta {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  color: #64748b;
+}
+
+.release-meta a {
+  color: #2563eb;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.release-meta a:hover {
+  text-decoration: underline;
+}

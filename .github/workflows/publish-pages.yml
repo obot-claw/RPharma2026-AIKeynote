@@ -38,7 +38,11 @@ jobs:
         run: |
           mkdir -p _site
           cp index.html style.css script.js outline.md README.md _site/
+          if [ -f AGENTS.md ]; then cp AGENTS.md _site/; fi
           if [ -d notes ]; then cp -R notes _site/notes; fi
+          if [ -d docs ]; then cp -R docs _site/docs; fi
+          if [ -d assets ]; then cp -R assets _site/assets; fi
+          if [ -d skills ]; then cp -R skills _site/skills; fi
           touch _site/.nojekyll
 
       - name: Upload static deck
