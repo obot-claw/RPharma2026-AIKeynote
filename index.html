@@ -10,216 +10,219 @@
   <main class="deck" id="deck">
     <section class="slide title">
       <p class="eyebrow">R/Pharma 2026 Keynote Draft</p>
-      <h1>From Open Source Safety Graphics to Autonomous AI Workers</h1>
-      <p class="subtitle">SafetyGraphics → GSM → Agentic Engineering → obot</p>
+      <h1>Agentic AI for Clinical Trial Operations</h1>
+      <p class="subtitle">What the open-source community can do next</p>
       <p class="speaker">Jeremy Wildfire</p>
     </section>
 
     <section class="slide">
-      <h2>What this talk is about</h2>
+      <h2>The thesis</h2>
+      <p class="definition">Agentic AI can streamline clinical trial work when it is grounded in open, inspectable, reusable clinical software workflows.</p>
+      <p class="note">Focus: faster study data analysis across setup, conduct, closeout, and submission to FDA and other regulators.</p>
+    </section>
+
+    <section class="slide">
+      <h2>Why R/Pharma?</h2>
       <ul>
-        <li>How open-source safety visualization work created reusable clinical reporting infrastructure.</li>
-        <li>How GSM and related projects are becoming an agent-assisted engineering system.</li>
-        <li>What autonomous AI workers could mean for clinical open-source development.</li>
+        <li>This community already works in the pre-competitive open-source space.</li>
+        <li>Clinical trial operations have shared problems hiding behind company-specific implementations.</li>
+        <li>Agentic AI gives us a new way to build, maintain, and validate shared infrastructure.</li>
       </ul>
-      <p class="note">Working thesis: AI is most useful when it makes expert workflows more inspectable, reproducible, and faster to improve.</p>
+    </section>
+
+    <section class="slide agenda">
+      <h2>Three parts</h2>
+      <ol>
+        <li>How open source entered the clinical trial pipeline.</li>
+        <li>What SafetyGraphics and GSM taught us about shared monitoring frameworks.</li>
+        <li>How the workflow is shifting from code assist to agentic engineering.</li>
+      </ol>
     </section>
 
     <section class="slide section-title">
       <p class="time">~10 minutes</p>
-      <h2>1. Open source foundation</h2>
-      <p>SafetyGraphics, GSM, and the case for transparent safety review tooling.</p>
+      <h2>1. A quick history</h2>
+      <p>From company-specific SAS macro libraries to open clinical frameworks.</p>
     </section>
 
     <section class="slide">
-      <h2>Why safety graphics matter</h2>
+      <h2>The old model</h2>
       <ul>
-        <li>Safety review depends on repeatable visual patterns.</li>
-        <li>Clinical teams need to inspect data, not just consume static tables.</li>
-        <li>Open implementations make assumptions visible and reviewable.</li>
+        <li>Every company had its own large repository of SAS macros.</li>
+        <li>Clinical reporting infrastructure was powerful, but mostly internal.</li>
+        <li>Teams repeatedly solved similar operational and analysis problems in parallel.</li>
       </ul>
     </section>
 
     <section class="slide">
-      <h2>SafetyGraphics</h2>
+      <h2>The hybrid era</h2>
       <ul>
-        <li>Reusable safety displays.</li>
-        <li>R-first workflows.</li>
-        <li>Interactive review patterns aligned with common clinical questions.</li>
+        <li>SAS remains central in many organizations.</li>
+        <li>R, Python, and other open-source tools become part of the clinical trial pipeline.</li>
+        <li>Teams begin connecting closed-source macro libraries with open-source workflows.</li>
       </ul>
-      <p class="placeholder">Add: concrete screenshots/examples.</p>
     </section>
 
     <section class="slide">
-      <h2>The reusable renderer pattern</h2>
-      <div class="grid">
-        <div><strong>Data</strong><br/>standardized inputs</div>
-        <div><strong>Renderer</strong><br/>interactive or static display</div>
-        <div><strong>Example</strong><br/>reproducible demo</div>
-        <div><strong>Docs</strong><br/>requirements and usage</div>
+      <h2>Open frameworks + local customization</h2>
+      <div class="grid three">
+        <div><strong>Shared core</strong><br/>community-maintained methods, examples, and docs</div>
+        <div><strong>Company extensions</strong><br/>local standards, templates, and review practices</div>
+        <div><strong>Clinical use</strong><br/>study setup, conduct, closeout, and submission support</div>
+      </div>
+      <p class="note">Pharmaverse-style approaches show the direction: shared infrastructure does not eliminate company-specific needs; it gives them a better base.</p>
+    </section>
+
+    <section class="slide transition">
+      <h2>Open source changed the surface area</h2>
+      <p>More of the clinical workflow became visible, reusable, and improvable.</p>
+    </section>
+
+    <section class="slide section-title">
+      <p class="time">~12 minutes</p>
+      <h2>2. SafetyGraphics and GSM</h2>
+      <p>Two open-source projects, one recurring pattern: pre-competitive clinical monitoring frameworks.</p>
+    </section>
+
+    <section class="slide split">
+      <div>
+        <h2>SafetyGraphics</h2>
+        <ul>
+          <li>Focused on safety monitoring.</li>
+          <li>Reusable safety review displays.</li>
+          <li>Interactive workflows aligned with common clinical questions.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <strong>Core lesson</strong>
+        <p>When data inputs, displays, examples, and docs are open, safety review assumptions become easier to inspect.</p>
+      </div>
+    </section>
+
+    <section class="slide split">
+      <div>
+        <h2>GSM</h2>
+        <ul>
+          <li>Focused on RBQM and statistical monitoring.</li>
+          <li>Broader study monitoring and quality workflows.</li>
+          <li>Reusable outputs that can be generated, reviewed, and versioned.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <strong>Core lesson</strong>
+        <p>Monitoring workflows should be treated like software: specified, tested, documented, and improved over time.</p>
       </div>
     </section>
 
     <section class="slide">
-      <h2>GSM</h2>
+      <h2>The shared pattern</h2>
+      <div class="grid">
+        <div><strong>Pre-competitive</strong><br/>common problems before company-specific customization</div>
+        <div><strong>Open</strong><br/>public repos, examples, and documentation</div>
+        <div><strong>Inspectable</strong><br/>visible assumptions and reviewable outputs</div>
+        <div><strong>Reusable</strong><br/>frameworks that can carry many studies</div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>Why this matters for AI</h2>
       <ul>
-        <li>Broader reporting and monitoring framework.</li>
-        <li>Reusable outputs that can be generated, reviewed, and versioned.</li>
-        <li>Bridge between clinical reporting needs and software engineering practices.</li>
+        <li>Agents need explicit workflows, artifacts, and quality bars.</li>
+        <li>Open-source projects already expose those artifacts.</li>
+        <li>Clinical operations work becomes something agents can help draft, test, document, and improve.</li>
       </ul>
     </section>
 
     <section class="slide transition">
-      <h2>Open source created the surface area</h2>
-      <p>AI changes how we maintain, validate, and extend it.</p>
+      <h2>Once the workflow is open and software-shaped...</h2>
+      <p>AI can do more than autocomplete code.</p>
     </section>
 
     <section class="slide section-title">
       <p class="time">~15 minutes</p>
-      <h2>2. Current work: GSM + Agentic Engineering</h2>
-      <p>Using agents as bounded engineering collaborators.</p>
+      <h2>3. From code assist to agentic engineering</h2>
+      <p>Current and future workflows for clinical trial operations.</p>
+    </section>
+
+    <section class="slide warning">
+      <h2>Draft note</h2>
+      <p>The available dictation transcript cuts off mid-thought after Jeremy begins the transition from “code assist” to the current kind of AI.</p>
+      <p class="note">The next slides are a first-draft scaffold, not a claimed final ending.</p>
     </section>
 
     <section class="slide">
-      <h2>From dashboards to pipelines</h2>
+      <h2>What changed in the last few years</h2>
       <ul>
-        <li>Reports should be generated.</li>
-        <li>Outputs should be testable.</li>
-        <li>Changes should be reviewed through GitHub.</li>
-        <li>Examples should deploy automatically for inspection.</li>
+        <li>LLMs became more capable and more available.</li>
+        <li>The workflow moved beyond isolated code suggestions.</li>
+        <li>Agents can now execute bounded loops across requirements, code, docs, tests, demos, and pull requests.</li>
       </ul>
     </section>
 
     <section class="slide">
-      <h2>Agentic Engineering</h2>
-      <p class="definition">A workflow where humans set direction and agents execute bounded engineering loops with auditable evidence.</p>
-      <ol>
-        <li>Define requirement.</li>
-        <li>Implement.</li>
-        <li>Test and demo.</li>
-        <li>Open PR.</li>
-        <li>Review and iterate.</li>
-      </ol>
+      <h2>Agentic engineering</h2>
+      <p class="definition">Humans set direction; agents execute bounded work loops with auditable evidence.</p>
+      <div class="flow">Requirement → implementation → checks → demo → PR → review</div>
     </section>
 
     <section class="slide">
-      <h2>What agents are already good at</h2>
+      <h2>Clinical trial operations opportunities</h2>
       <ul>
-        <li>Scaffolding examples and documentation.</li>
-        <li>Refactoring repeated package patterns.</li>
-        <li>Creating requirement matrices.</li>
-        <li>Deploying reviewable demos.</li>
-        <li>Summarizing PR/check status.</li>
+        <li><strong>Setup:</strong> prepare analysis workflows, examples, specifications, and study configuration.</li>
+        <li><strong>Conduct:</strong> monitor data, refresh outputs, triage anomalies, and maintain review artifacts.</li>
+        <li><strong>Closeout:</strong> reconcile outputs, document decisions, and assemble evidence.</li>
+        <li><strong>Submission:</strong> support traceable packages for FDA and other regulatory authorities.</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>What agents can help with now</h2>
+      <ul>
+        <li>Drafting requirements and requirement matrices.</li>
+        <li>Scaffolding open-source package work.</li>
+        <li>Updating documentation and examples.</li>
+        <li>Running static and rendered-output checks.</li>
+        <li>Summarizing evidence for human review.</li>
       </ul>
     </section>
 
     <section class="slide warning">
-      <h2>Where agents still fail</h2>
+      <h2>What still needs humans</h2>
       <ul>
-        <li>Vague requirements become shallow spikes.</li>
-        <li>UI functionality can look complete but miss behavior.</li>
-        <li>Status updates can imply progress without evidence.</li>
-        <li>Human feedback needs a structured path back into the work.</li>
+        <li>Scientific and clinical judgment.</li>
+        <li>Regulatory accountability.</li>
+        <li>Risk acceptance and prioritization.</li>
+        <li>Approval boundaries for external actions.</li>
+        <li>Final interpretation of study data.</li>
       </ul>
     </section>
 
     <section class="slide">
-      <h2>Requirements are the contract</h2>
+      <h2>obot as the demo thread</h2>
       <ul>
-        <li>Functional specs.</li>
-        <li>Data specs.</li>
-        <li>Regression tests.</li>
-        <li>Baseline examples.</li>
-        <li>Known gaps.</li>
-      </ul>
-    </section>
-
-    <section class="slide">
-      <h2>Human feedback loop</h2>
-      <div class="flow">Telegram questions → recommendations → decisions → project docs → implementation</div>
-      <p class="note">The interview framework keeps ambiguity out of GitHub-only dead ends.</p>
-    </section>
-
-    <section class="slide">
-      <h2>The agent workspace</h2>
-      <ul>
-        <li><strong>Memory:</strong> durable project context.</li>
-        <li><strong>Skills:</strong> repeatable workflows.</li>
-        <li><strong>Heartbeats:</strong> periodic checks.</li>
-        <li><strong>Dreams:</strong> private synthesis and questions.</li>
-        <li><strong>Project pages:</strong> public status and demos.</li>
-      </ul>
-    </section>
-
-    <section class="slide transition">
-      <h2>Today: assisted engineering</h2>
-      <p>Next: persistent AI workers with explicit boundaries.</p>
-    </section>
-
-    <section class="slide section-title">
-      <p class="time">~15 minutes</p>
-      <h2>3. Future: autonomous AI workers</h2>
-      <p>A practical vision using obot as the demo.</p>
-    </section>
-
-    <section class="slide">
-      <h2>What autonomous should mean</h2>
-      <ul>
-        <li>Bounded goals.</li>
-        <li>Explicit permissions.</li>
-        <li>Durable memory.</li>
-        <li>Auditable actions.</li>
-        <li>Rollback paths.</li>
-      </ul>
-    </section>
-
-    <section class="slide">
-      <h2>obot as a working example</h2>
-      <ul>
-        <li>Telegram as the human interface.</li>
+        <li>A dedicated open-source development agent.</li>
         <li>GitHub as the engineering surface.</li>
         <li>Browser QA for rendered outputs.</li>
-        <li>Project hub for public status.</li>
-        <li>Skills and memory for continuity.</li>
+        <li>Memory and skills for continuity.</li>
+        <li>Telegram feedback loops for decisions and review.</li>
       </ul>
-      <p class="placeholder">Add: live demo sequence.</p>
+      <p class="placeholder">Add: live demo sequence once final talk arc is confirmed.</p>
     </section>
 
     <section class="slide">
-      <h2>Dreaming without pretending</h2>
-      <ul>
-        <li>Private synthesis, not hidden work.</li>
-        <li>Questions surfaced during nightly summaries.</li>
-        <li>Ideas promoted only after review.</li>
-      </ul>
-    </section>
-
-    <section class="slide">
-      <h2>Clinical software implications</h2>
-      <ul>
-        <li>More maintained examples.</li>
-        <li>Better documentation coverage.</li>
-        <li>Faster renderer/report updates.</li>
-        <li>More complete validation evidence.</li>
-        <li>Continuous alignment between static and interactive outputs.</li>
-      </ul>
-    </section>
-
-    <section class="slide warning">
-      <h2>Risks and open questions</h2>
-      <ul>
-        <li>Qualification and validation.</li>
-        <li>Accountability for autonomous changes.</li>
-        <li>Model drift and reproducibility.</li>
-        <li>Audit trails and permission boundaries.</li>
-        <li>Organizational trust.</li>
-      </ul>
+      <h2>Guardrails for clinical contexts</h2>
+      <div class="grid">
+        <div><strong>Evidence</strong><br/>tests, rendered checks, and reviewable artifacts</div>
+        <div><strong>Permissions</strong><br/>clear boundaries for writes and external actions</div>
+        <div><strong>Traceability</strong><br/>requirements linked to outputs and decisions</div>
+        <div><strong>Humans</strong><br/>expert judgment remains the control point</div>
+      </div>
     </section>
 
     <section class="slide closing">
-      <h2>Closing</h2>
-      <p>Build open, auditable systems where AI workers amplify expert judgment.</p>
-      <p class="placeholder">Add final links and QR code.</p>
+      <h2>Open source is the path</h2>
+      <p>Build open, auditable agentic systems where AI workers amplify expert clinical and statistical judgment.</p>
+      <p class="placeholder">Add final links, QR code, and Jeremy's confirmed closing thought.</p>
     </section>
   </main>
 
