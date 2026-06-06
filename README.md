@@ -2,6 +2,8 @@
 
 HTML slide deck for Jeremy Wildfire's R/Pharma 2026 keynote.
 
+Published deck: https://obot-claw.github.io/RPharma2026-AIKeynote/
+
 Working frame:
 
 1. **Historical context** — how clinical trial pipelines shifted from company-specific SAS macro libraries to hybrid SAS/R/Python workflows and open frameworks with company-specific customization.
@@ -11,3 +13,8 @@ Working frame:
 Current draft notes are in `notes/keynote-direction-2026-06-06.md`. The latest source dictation transcript cuts off mid-thought during the transition into agentic AI, so the final section is intentionally marked as draft scaffolding.
 
 Open `index.html` locally or publish with GitHub Pages to review the current draft.
+
+
+## Publishing
+
+The deck is a static HTML/CSS/JS site. GitHub Pages is published by `.github/workflows/publish-pages.yml` on pushes to `main`, and can also be run manually with `workflow_dispatch`.
