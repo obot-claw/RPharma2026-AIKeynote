@@ -3,54 +3,231 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>R/Pharma 2026 AI Keynote — Developer Diary</title>
-  <meta name="description" content="Preparing an R/Pharma 2026 keynote in the open: a developer diary on agentic AI for clinical trial analytics." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/site.css" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23271810'/%3E%3Ccircle cx='50' cy='50' r='22' fill='%23f97316'/%3E%3C/svg%3E" />
+  <title>R/Pharma 2026 AI Keynote</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <a class="skip" href="#diary">Skip to content</a>
+  <main class="deck" id="deck">
+    <section class="slide title">
+      <p class="eyebrow">R/Pharma 2026 Keynote Draft</p>
+      <h1>From Open Source Safety Graphics to Autonomous AI Workers</h1>
+      <p class="subtitle">SafetyGraphics → GSM → Agentic Engineering → obot</p>
+      <p class="speaker">Jeremy Wildfire</p>
+    </section>
 
-  <div class="layout">
-    <aside class="side">
-      <div>
-        <p class="side-label">R/Pharma 2026 · Keynote · October</p>
-        <h1>From open source safety graphics to <em>autonomous AI workers</em></h1>
-        <p class="side-desc">Jeremy Wildfire is preparing his R/Pharma keynote in the open. The developer diary on the right is the live record — experiments, lessons, and honest dead ends, posted right up until the talk.</p>
-        <nav class="side-nav" aria-label="Talk resources">
-          <a href="#diary">Developer diary <span class="arr">→</span></a>
-          <a href="https://github.com/obot-claw/RPharma2026-AIKeynote/blob/main/outline.md">Talk outline <span class="arr">→</span></a>
-          <a href="https://github.com/obot-claw/RPharma2026-AIKeynote">GitHub repo <span class="arr">→</span></a>
-        </nav>
-        <a class="side-cta" href="deck/">Open the slide deck</a>
+    <section class="slide">
+      <h2>What this talk is about</h2>
+      <ul>
+        <li>How open-source safety visualization work created reusable clinical reporting infrastructure.</li>
+        <li>How GSM and related projects are becoming an agent-assisted engineering system.</li>
+        <li>What autonomous AI workers could mean for clinical open-source development.</li>
+      </ul>
+      <p class="note">Working thesis: AI is most useful when it makes expert workflows more inspectable, reproducible, and faster to improve.</p>
+    </section>
+
+    <section class="slide section-title">
+      <p class="time">~10 minutes</p>
+      <h2>1. Open source foundation</h2>
+      <p>SafetyGraphics, GSM, and the case for transparent safety review tooling.</p>
+    </section>
+
+    <section class="slide">
+      <h2>Why safety graphics matter</h2>
+      <ul>
+        <li>Safety review depends on repeatable visual patterns.</li>
+        <li>Clinical teams need to inspect data, not just consume static tables.</li>
+        <li>Open implementations make assumptions visible and reviewable.</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>SafetyGraphics</h2>
+      <ul>
+        <li>Reusable safety displays.</li>
+        <li>R-first workflows.</li>
+        <li>Interactive review patterns aligned with common clinical questions.</li>
+      </ul>
+      <p class="placeholder">Add: concrete screenshots/examples.</p>
+    </section>
+
+    <section class="slide">
+      <h2>The reusable renderer pattern</h2>
+      <div class="grid">
+        <div><strong>Data</strong><br/>standardized inputs</div>
+        <div><strong>Renderer</strong><br/>interactive or static display</div>
+        <div><strong>Example</strong><br/>reproducible demo</div>
+        <div><strong>Docs</strong><br/>requirements and usage</div>
       </div>
-      <p class="side-foot">Also on <a href="https://jwildfire.github.io/">jwildfire.github.io</a> · <a href="https://openrbqm.github.io/">OpenRBQM</a> · <a href="https://rinpharma.com/">R/Pharma</a></p>
-    </aside>
+    </section>
 
-    <main class="feed" id="diary">
-      <div class="feed-head">
-        <h2>Developer diary</h2>
-        <span class="count">1 entry · more before October</span>
-      </div>
+    <section class="slide">
+      <h2>GSM</h2>
+      <ul>
+        <li>Broader reporting and monitoring framework.</li>
+        <li>Reusable outputs that can be generated, reviewed, and versioned.</li>
+        <li>Bridge between clinical reporting needs and software engineering practices.</li>
+      </ul>
+    </section>
 
-      <article class="card">
-        <p class="date">June 10, 2026 · Part 1</p>
-        <h3><a href="diary/rpharma-keynote-developer-diary.html">What Can We Actually Do With AI Agents Right Now?</a></h3>
-        <p class="excerpt">Kicking off the series: the abstract I submitted, the messier reality two months later, how our team's "AI in the loop" practice works today — and why autonomous agents are the open question worth chasing before October.</p>
-        <p class="links"><a href="diary/rpharma-keynote-developer-diary.html">Read entry →</a> <a href="https://jwildfire.github.io/2026/06/10/rpharma-keynote-developer-diary.html">Original ↗</a></p>
-      </article>
+    <section class="slide transition">
+      <h2>Open source created the surface area</h2>
+      <p>AI changes how we maintain, validate, and extend it.</p>
+    </section>
 
-      <article class="card upcoming">
-        <p class="date">Coming soon · Part 2</p>
-        <h3>Introducing obot</h3>
-        <p class="excerpt">A semi-autonomous, open-source coding agent created with OpenClaw, and the next experiment in the series.</p>
-      </article>
+    <section class="slide section-title">
+      <p class="time">~15 minutes</p>
+      <h2>2. Current work: GSM + Agentic Engineering</h2>
+      <p>Using agents as bounded engineering collaborators.</p>
+    </section>
 
-      <p class="feed-note">Working in public — every entry is cross-posted from the original blog and carries its own AI collaboration note.</p>
-    </main>
-  </div>
+    <section class="slide">
+      <h2>From dashboards to pipelines</h2>
+      <ul>
+        <li>Reports should be generated.</li>
+        <li>Outputs should be testable.</li>
+        <li>Changes should be reviewed through GitHub.</li>
+        <li>Examples should deploy automatically for inspection.</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Agentic Engineering</h2>
+      <p class="definition">A workflow where humans set direction and agents execute bounded engineering loops with auditable evidence.</p>
+      <ol>
+        <li>Define requirement.</li>
+        <li>Implement.</li>
+        <li>Test and demo.</li>
+        <li>Open PR.</li>
+        <li>Review and iterate.</li>
+      </ol>
+    </section>
+
+    <section class="slide">
+      <h2>What agents are already good at</h2>
+      <ul>
+        <li>Scaffolding examples and documentation.</li>
+        <li>Refactoring repeated package patterns.</li>
+        <li>Creating requirement matrices.</li>
+        <li>Deploying reviewable demos.</li>
+        <li>Summarizing PR/check status.</li>
+      </ul>
+    </section>
+
+    <section class="slide warning">
+      <h2>Where agents still fail</h2>
+      <ul>
+        <li>Vague requirements become shallow spikes.</li>
+        <li>UI functionality can look complete but miss behavior.</li>
+        <li>Status updates can imply progress without evidence.</li>
+        <li>Human feedback needs a structured path back into the work.</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Requirements are the contract</h2>
+      <ul>
+        <li>Functional specs.</li>
+        <li>Data specs.</li>
+        <li>Regression tests.</li>
+        <li>Baseline examples.</li>
+        <li>Known gaps.</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Human feedback loop</h2>
+      <div class="flow">Telegram questions → recommendations → decisions → project docs → implementation</div>
+      <p class="note">The interview framework keeps ambiguity out of GitHub-only dead ends.</p>
+    </section>
+
+    <section class="slide">
+      <h2>The agent workspace</h2>
+      <ul>
+        <li><strong>Memory:</strong> durable project context.</li>
+        <li><strong>Skills:</strong> repeatable workflows.</li>
+        <li><strong>Heartbeats:</strong> periodic checks.</li>
+        <li><strong>Dreams:</strong> private synthesis and questions.</li>
+        <li><strong>Project pages:</strong> public status and demos.</li>
+      </ul>
+    </section>
+
+    <section class="slide transition">
+      <h2>Today: assisted engineering</h2>
+      <p>Next: persistent AI workers with explicit boundaries.</p>
+    </section>
+
+    <section class="slide section-title">
+      <p class="time">~15 minutes</p>
+      <h2>3. Future: autonomous AI workers</h2>
+      <p>A practical vision using obot as the demo.</p>
+    </section>
+
+    <section class="slide">
+      <h2>What autonomous should mean</h2>
+      <ul>
+        <li>Bounded goals.</li>
+        <li>Explicit permissions.</li>
+        <li>Durable memory.</li>
+        <li>Auditable actions.</li>
+        <li>Rollback paths.</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>obot as a working example</h2>
+      <ul>
+        <li>Telegram as the human interface.</li>
+        <li>GitHub as the engineering surface.</li>
+        <li>Browser QA for rendered outputs.</li>
+        <li>Project hub for public status.</li>
+        <li>Skills and memory for continuity.</li>
+      </ul>
+      <p class="placeholder">Add: live demo sequence.</p>
+    </section>
+
+    <section class="slide">
+      <h2>Dreaming without pretending</h2>
+      <ul>
+        <li>Private synthesis, not hidden work.</li>
+        <li>Questions surfaced during nightly summaries.</li>
+        <li>Ideas promoted only after review.</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Clinical software implications</h2>
+      <ul>
+        <li>More maintained examples.</li>
+        <li>Better documentation coverage.</li>
+        <li>Faster renderer/report updates.</li>
+        <li>More complete validation evidence.</li>
+        <li>Continuous alignment between static and interactive outputs.</li>
+      </ul>
+    </section>
+
+    <section class="slide warning">
+      <h2>Risks and open questions</h2>
+      <ul>
+        <li>Qualification and validation.</li>
+        <li>Accountability for autonomous changes.</li>
+        <li>Model drift and reproducibility.</li>
+        <li>Audit trails and permission boundaries.</li>
+        <li>Organizational trust.</li>
+      </ul>
+    </section>
+
+    <section class="slide closing">
+      <h2>Closing</h2>
+      <p>Build open, auditable systems where AI workers amplify expert judgment.</p>
+      <p class="placeholder">Add final links and QR code.</p>
+    </section>
+  </main>
+
+  <nav class="controls" aria-label="Slide controls">
+    <button id="prev" type="button">←</button>
+    <span id="counter"></span>
+    <button id="next" type="button">→</button>
+  </nav>
+  <script src="script.js"></script>
 </body>
 </html>
