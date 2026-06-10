@@ -97,3 +97,34 @@ button {
 .release-meta a:hover {
   text-decoration: underline;
 }
+
+.draft-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #dc2626;
+  color: #fff;
+  font-size: clamp(1.05rem, 1.8vw, 1.5rem);
+  font-weight: 700;
+  text-align: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 14px rgba(220, 38, 38, 0.35);
+}
+.draft-banner a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+.draft-banner a:hover {
+  color: #fecaca;
+}
+.slide.title {
+  position: relative;
+}
+@media print {
+  .draft-banner {
+    position: static;
+    margin: -4vh -6vw 1rem;
+  }
+}
