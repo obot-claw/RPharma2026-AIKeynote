@@ -4,9 +4,9 @@ Documentation hub and slide deck for Jeremy Wildfire's R/Pharma 2026 keynote, pr
 
 Published site: https://obot-claw.github.io/RPharma2026-AIKeynote/
 
-- **Hub** (`index.html`) — the talk abstract, working outline, and developer diary.
+- **Home** (`index.html`) — diary-first split layout: talk identity in the sidebar, developer diary feed as the main content.
 - **Slide deck** (`deck/`) — the living draft of the talk, published at `/deck/`.
-- **Developer diary** (`diary/`) — entries documenting the build-up to the keynote, cross-posted from [jwildfire.github.io](https://jwildfire.github.io/) and the [Gilead BIG Blog](https://gilead-biostats.github.io/big.blog/). Each entry keeps its markdown source alongside the rendered page.
+- **Developer diary** (`diary/`) — entries documenting the build-up to the keynote, cross-posted from [jwildfire.github.io](https://jwildfire.github.io/). Each entry keeps its markdown source alongside the rendered page.
 - **Outline** (`outline.md`) — the full slide-by-slide working outline.
 
 Working frame for the talk:

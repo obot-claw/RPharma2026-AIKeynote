@@ -3,145 +3,54 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>From Open Source Safety Graphics to Autonomous AI Workers — R/Pharma 2026 Keynote</title>
-  <meta name="description" content="Jeremy Wildfire's R/Pharma 2026 keynote, prepared in the open: developer diary, working outline, and live slide deck on agentic AI for clinical trial analytics." />
+  <title>R/Pharma 2026 AI Keynote — Developer Diary</title>
+  <meta name="description" content="Preparing an R/Pharma 2026 keynote in the open: a developer diary on agentic AI for clinical trial analytics." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=IBM+Plex+Mono:wght@400;600&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/site.css" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%237c2d12'/%3E%3Ccircle cx='50' cy='50' r='22' fill='%23f97316'/%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23271810'/%3E%3Ccircle cx='50' cy='50' r='22' fill='%23f97316'/%3E%3C/svg%3E" />
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
+  <a class="skip" href="#diary">Skip to content</a>
 
-  <header class="topbar">
-    <a class="wordmark" href="./">R/Pharma 2026 <span class="tick">/</span> AI Keynote</a>
-    <nav aria-label="Site">
-      <a href="#talk">The talk</a>
-      <a href="#outline">Outline</a>
-      <a href="#diary">Developer diary</a>
-      <a class="deck-link" href="deck/">Slide deck →</a>
-    </nav>
-  </header>
-
-  <main id="main">
-    <div class="shell">
-      <section class="hero">
-        <p class="kicker reveal">R/Pharma 2026 · Keynote · October</p>
-        <h1 class="reveal">From open source safety graphics to <em>autonomous AI workers</em></h1>
-        <p class="lede reveal">Jeremy Wildfire is preparing his R/Pharma keynote in the open. The experiments, the developer diary, and the slide deck all live in this repository — and they will keep changing right up until the talk.</p>
-        <div class="cta reveal">
-          <a class="button primary" href="deck/">Open the slide deck</a>
-          <a class="button ghost" href="#diary">Read the developer diary</a>
-        </div>
-        <p class="path reveal"><span>SafetyGraphics</span><span class="arrow">→</span><span>GSM</span><span class="arrow">→</span><span>Agentic Engineering</span><span class="arrow">→</span><span>obot</span></p>
-      </section>
-
-      <section class="section" id="talk">
-        <div class="section-grid">
-          <div class="section-label">
-            <p class="kicker">About the talk</p>
-            <p class="sub">Abstract as submitted, April 2026</p>
-          </div>
-          <div class="prose">
-            <h2>AI in the Loop: How Agentic Workflows Are Reshaping Clinical Trial Analytics</h2>
-            <p>Agentic AI is transforming how software is built, but pharma's regulated environment demands more than raw capability. It demands scaffolding that makes AI behavior repeatable, auditable, and governed by the humans who remain responsible for every line of code.</p>
-            <p>This keynote offers a practical framework for deploying agentic workflows in GxP settings, grounded in years of building and deploying open-source tools for clinical trials using R.</p>
-            <p>We begin with the landscape: what agentic tools are (and aren't), how models, scaffolding, and context interact, and why "AI in the loop" — agents operating within human-governed workflows with explicit approval gates — is the right paradigm for regulated work.</p>
-            <p>We then get concrete, showing how our team uses agentic workflows to accelerate the <code>{gsm}</code> family of R packages for monitoring active trials: <code>{gsm.agent}</code> drives a red-green TDD cycle from failing test to merged PR; <code>{gsm.roadmap}</code> decomposes requirements with AI-assisted planning using GitHub workflows; and <code>{qcthat}</code> generates audit-ready traceability matrices as a byproduct of normal development. We share real results and honest limitations.</p>
-            <p>We close by looking forward, from package development into clinical operations, where the same approach extends to study-level operations, CDISC data generation, and CSR creation using Pharmaverse packages and other tools.</p>
-            <p class="abstract-note">The abstract was written months before the talk — the field is moving fast, and the diary below tracks how the plan actually evolves.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="outline">
-        <div class="section-grid">
-          <div class="section-label">
-            <p class="kicker">Working outline</p>
-            <p class="sub">~40 minutes · three acts</p>
-          </div>
-          <div>
-            <h2>The shape of the talk</h2>
-            <div class="outline-cards">
-              <div class="outline-card">
-                <span class="num" aria-hidden="true">01</span>
-                <p class="time">~10 min</p>
-                <h3>Open source foundation</h3>
-                <p>SafetyGraphics, GSM, and why clinical safety workflows need transparent, inspectable tooling.</p>
-              </div>
-              <div class="outline-card">
-                <span class="num" aria-hidden="true">02</span>
-                <p class="time">~15 min</p>
-                <h3>Current work: agentic engineering</h3>
-                <p>Humans set direction; agents execute bounded engineering loops with auditable evidence. What already works — and what still fails.</p>
-              </div>
-              <div class="outline-card">
-                <span class="num" aria-hidden="true">03</span>
-                <p class="time">~15 min</p>
-                <h3>Future: autonomous AI workers</h3>
-                <p>What autonomous should mean — bounded goals, explicit permissions, durable memory — with obot as a working demo.</p>
-              </div>
-            </div>
-            <p class="outline-more"><a href="https://github.com/obot-claw/RPharma2026-AIKeynote/blob/main/outline.md">Read the full slide-by-slide outline →</a></p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="diary">
-        <div class="section-grid">
-          <div class="section-label">
-            <p class="kicker">Developer diary</p>
-            <p class="sub">Working in public, June → October</p>
-          </div>
-          <div>
-            <h2>Notes from the build-up</h2>
-            <ol class="timeline">
-              <li class="entry">
-                <p class="date">June 10, 2026 · Part 1</p>
-                <h3><a href="diary/rpharma-keynote-developer-diary.html">What Can We Actually Do With AI Agents Right Now?</a></h3>
-                <p class="excerpt">Kicking off the developer diary: the abstract, the honest reality two months later, how the team's "AI in the loop" practice works today, and why autonomous agents are the open question worth chasing before October.</p>
-                <p class="links">
-                  <a href="diary/rpharma-keynote-developer-diary.html">Read entry →</a>
-                  <a href="https://jwildfire.github.io/2026/06/10/rpharma-keynote-developer-diary.html">Original post ↗</a>
-                </p>
-              </li>
-              <li class="entry upcoming">
-                <p class="date">Coming soon · Part 2</p>
-                <h3>Introducing obot</h3>
-                <p class="excerpt">A semi-autonomous, open-source coding agent created with OpenClaw — and the next experiment in the series.</p>
-              </li>
-            </ol>
-          </div>
-        </div>
-      </section>
-
-      <section aria-label="Slide deck">
-        <div class="deck-band" id="deck">
-          <div>
-            <p class="kicker">The slide deck</p>
-            <h2>A living draft, published from this repo</h2>
-            <p>Every push to <code>main</code> republishes the deck. Expect placeholders, rewrites, and the occasional demo slide that only makes sense in October.</p>
-          </div>
-          <a class="button primary" href="deck/">Open the deck →</a>
-        </div>
-      </section>
-    </div>
-  </main>
-
-  <footer class="site">
-    <div class="shell">
-      <div class="links">
-        <a href="https://github.com/obot-claw/RPharma2026-AIKeynote">GitHub repo</a>
-        <a href="https://jwildfire.github.io/">jwildfire.github.io</a>
-        <a href="https://gilead-biostats.github.io/big.blog/">BIG Blog</a>
-        <a href="https://openrbqm.github.io/">OpenRBQM</a>
-        <a href="https://github.com/SafetyGraphics/safetyGraphics">SafetyGraphics</a>
-        <a href="https://gilead-biostats.github.io/gsm.core/">gsm.core</a>
-        <a href="https://rinpharma.com/">R/Pharma</a>
+  <div class="layout">
+    <aside class="side">
+      <div>
+        <p class="side-label">R/Pharma 2026 · Keynote · October</p>
+        <h1>From open source safety graphics to <em>autonomous AI workers</em></h1>
+        <p class="side-desc">Jeremy Wildfire is preparing his R/Pharma keynote in the open. The developer diary on the right is the live record — experiments, lessons, and honest dead ends, posted right up until the talk.</p>
+        <nav class="side-nav" aria-label="Talk resources">
+          <a href="#diary">Developer diary <span class="arr">→</span></a>
+          <a href="https://github.com/obot-claw/RPharma2026-AIKeynote/blob/main/outline.md">Talk outline <span class="arr">→</span></a>
+          <a href="https://github.com/obot-claw/RPharma2026-AIKeynote">GitHub repo <span class="arr">→</span></a>
+        </nav>
+        <a class="side-cta" href="deck/">Open the slide deck</a>
       </div>
-      <p>Built in the open with AI assistance — each diary entry carries its own AI collaboration note.</p>
-    </div>
-  </footer>
+      <p class="side-foot">Also on <a href="https://jwildfire.github.io/">jwildfire.github.io</a> · <a href="https://openrbqm.github.io/">OpenRBQM</a> · <a href="https://rinpharma.com/">R/Pharma</a></p>
+    </aside>
+
+    <main class="feed" id="diary">
+      <div class="feed-head">
+        <h2>Developer diary</h2>
+        <span class="count">1 entry · more before October</span>
+      </div>
+
+      <article class="card">
+        <p class="date">June 10, 2026 · Part 1</p>
+        <h3><a href="diary/rpharma-keynote-developer-diary.html">What Can We Actually Do With AI Agents Right Now?</a></h3>
+        <p class="excerpt">Kicking off the series: the abstract I submitted, the messier reality two months later, how our team's "AI in the loop" practice works today — and why autonomous agents are the open question worth chasing before October.</p>
+        <p class="links"><a href="diary/rpharma-keynote-developer-diary.html">Read entry →</a> <a href="https://jwildfire.github.io/2026/06/10/rpharma-keynote-developer-diary.html">Original ↗</a></p>
+      </article>
+
+      <article class="card upcoming">
+        <p class="date">Coming soon · Part 2</p>
+        <h3>Introducing obot</h3>
+        <p class="excerpt">A semi-autonomous, open-source coding agent created with OpenClaw, and the next experiment in the series.</p>
+      </article>
+
+      <p class="feed-note">Working in public — every entry is cross-posted from the original blog and carries its own AI collaboration note.</p>
+    </main>
+  </div>
 </body>
 </html>
