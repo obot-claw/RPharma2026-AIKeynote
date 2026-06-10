@@ -41,10 +41,11 @@ jobs:
           if [ -f AGENTS.md ]; then cp AGENTS.md _site/; fi
           if [ -d notes ]; then cp -R notes _site/notes; fi
           if [ -d docs ]; then cp -R docs _site/docs; fi
+          if [ -d assets ]; then cp -R assets _site/assets; fi
           if [ -d skills ]; then cp -R skills _site/skills; fi
           touch _site/.nojekyll
 
-      - name: Upload static site
+      - name: Upload static deck
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
